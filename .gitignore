@@ -29,6 +29,7 @@ build
 dist
 .tmp
 *.db
+.strapi/
 
 # Debug
 npm-debug.log*
@@ -63,3 +64,35 @@ tsconfig.tsbuildinfo
 
 # Config Cache Directory
 cache
+
+# Strapi
+license.txt
+exports
+*.cache
+build
+.strapi-updater.json
+
+# Packages
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.swo
+*.swp
+*.swn
+*.swm
+*.out
+*.pid

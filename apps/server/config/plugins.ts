@@ -18,4 +18,10 @@ export default ({ env }) => ({
       },
     },
   },
+  sitemap: {
+    enabled: true,
+    config: {
+      autoGenerate: false,
+    },
+  },
 });

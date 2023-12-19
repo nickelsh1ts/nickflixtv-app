@@ -4,7 +4,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/*", ".next/**", "!.next/cache/**"]
+      "outputs": ["dist/*", ".next/**", "!.next/cache/**", ".strapi/*"]
     },
     "lint": {
       "dependsOn": ["^build"]
@@ -17,5 +17,11 @@
     "start": {
       "dependsOn": ["build", "lint"]
     }
-  }
+  },
+  "globalEnv": [
+    "STRAPI_URL",
+    "STRAPI_API_URL",
+    "STRAPI_API_TOKEN",
+    "NEXT_PUBLIC_URL"
+  ]
 }
