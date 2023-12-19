@@ -7,9 +7,13 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\" --cache"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-turbo": "^1.11.2"
+  },
   "dependencies": {
     "@notum-cz/strapi-plugin-content-versioning": "^1.2.6",
     "@strapi/plugin-color-picker": "^4.15.5",
