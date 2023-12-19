@@ -10,7 +10,7 @@
     "typecheck": "yarn typecheck:server && yarn typecheck:client",
     "typecheck:server": "tsc --project apps/server/tsconfig.json --noEmit",
     "typecheck:client": "tsc --project apps/web/tsconfig.json --noEmit",
-    "start": "NODE_ENV=PRODUCTION turbo start"
+    "start": "turbo start"
   },
   "devDependencies": {
     "cypress": "^13.6.1",
