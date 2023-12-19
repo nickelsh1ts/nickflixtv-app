@@ -1,24 +1,54 @@
 {
-  "name": "app",
+  "name": "nickflixtv",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build:server": "tsc --project server/tsconfig.json && tsc-alias -p server/tsconfig.json",
+    "build:next": "next build",
+    "build": "yarn build:next && yarn build:server",
+    "start": "NODE_ENV=production node dist/index.js",
+    "lint": "eslint \"./server/**/*.{ts,tsx}\" \"./src/**/*.{ts,tsx}\" --cache",
+    "format": "prettier --loglevel warn --write --cache .",
+    "format:check": "prettier --check --cache .",
+    "typecheck": "yarn typecheck:server && yarn typecheck:client",
+    "typecheck:server": "tsc --project server/tsconfig.json --noEmit",
+    "typecheck:client": "tsc --noEmit",
+    "cypress:open": "cypress open",
+    "cypress:prepare": "ts-node -r tsconfig-paths/register --files --project server/tsconfig.json server/scripts/prepareTestDb.ts",
+    "cypress:build": "yarn build && yarn cypress:prepare"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sct/overseerr.git"
+  },
+  "license": "MIT",
   "dependencies": {
+    "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/web-push": "^3.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "cypress": "^13.6.1",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lint-staged": "^15.2.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5"
   }
 }
