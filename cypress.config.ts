@@ -3,7 +3,7 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
   projectId: 'ip2fwk',
   e2e: {
-    baseUrl: 'http://localhost:5055',
+    baseUrl: 'http://localhost:3000',
     // experimentalSessionAndOrigin: true,
   },
   env: {
@@ -16,4 +16,4 @@ export default defineConfig({
     runMode: 2,
     openMode: 0,
   },
-})
+});
