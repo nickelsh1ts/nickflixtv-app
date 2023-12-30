@@ -5,4 +5,5 @@ config/
 
 # assets
 src/assets/
-public/
+public/*
+!public/*.html
