@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -17,10 +18,12 @@
     #0071ff33 160deg,
     transparent 360deg
   );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(74, 29, 150, 0),
+      rgba(74, 29, 150, 0),
+      rgba(74, 29, 150, 0.3)
+    );
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -46,30 +49,30 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --primary-glow: radial-gradient(rgba(74, 29, 150, 0.9), rgba(74, 29, 150, 0));
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
+      rgba(74, 29, 150, 0),
+      rgba(74, 29, 150, 0),
+      rgba(74, 29, 150, 0.3)
     );
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
     --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
+      #974ede,
+      #974ede,
+      #974ede,
+      #974ede,
+      #974ede,
+      #974ede,
+      #974ede
     );
 
-    --callout-rgb: 20, 20, 20;
+    --callout-rgb: 74, 29, 150;
     --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+    --card-rgb: 74, 29, 150;
+    --card-border-rgb: 74, 29, 150;
   }
 }
 
@@ -104,4 +107,122 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.error-message {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219/var(--tw-text-opacity));
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Dosis", sans-serif;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 0;
+}
+
+.center::before {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+}
+
+.center::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+}
+
+.center::before,
+.center::after {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+
+.error-text {
+  margin-bottom: 5rem;
+  font-family: "Dosis", sans-serif;
+  padding: 40px 0;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.w-100 {
+  color: #fff;
+}
+
+.ntv-purple {
+  color: #974ede;
+}
+
+.fs-5 {
+  font-size: 1.25rem!important;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.lost-space {
+  font-size: 3rem;
+  font-weight: 300;
 }
