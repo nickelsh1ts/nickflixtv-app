@@ -1043,7 +1043,7 @@
     "@babel/parser" "^7.22.15"
     "@babel/types" "^7.22.15"
 
-"@babel/traverse@^7.23.7":
+"@babel/traverse@^7.23.7", "@babel/traverse@^7.9.0":
   version "7.23.7"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.23.7.tgz#9a7bf285c928cb99b5ead19c3b1ce5b310c9c305"
   integrity sha512-tY3mM8rH9jM0YHFGyfC0/xf+SB5eKUu7HPj7/k3fpi9dAlsMc5YbQvDi0Sh2QTPXqMhyaAtzAr807TIyfQrmyg==
@@ -1059,7 +1059,7 @@
     debug "^4.3.1"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.21.3", "@babel/types@^7.22.15", "@babel/types@^7.22.19", "@babel/types@^7.22.5", "@babel/types@^7.23.0", "@babel/types@^7.23.4", "@babel/types@^7.23.6", "@babel/types@^7.4.4", "@babel/types@^7.6.1", "@babel/types@^7.9.5", "@babel/types@^7.9.6":
+"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.21.3", "@babel/types@^7.22.15", "@babel/types@^7.22.19", "@babel/types@^7.22.5", "@babel/types@^7.23.0", "@babel/types@^7.23.4", "@babel/types@^7.23.6", "@babel/types@^7.4.4", "@babel/types@^7.6.1", "@babel/types@^7.9.0", "@babel/types@^7.9.5", "@babel/types@^7.9.6":
   version "7.23.6"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.23.6.tgz#be33fdb151e1f5a56877d704492c240fc71c7ccd"
   integrity sha512-+uarb83brBzPKN38NX1MkB6vb6+mwvR6amUulqAE7ccQw1pEl+bCia9TbdG1lsnFP7lZySvUn37CHyXQdfTwzg==
@@ -1398,6 +1398,15 @@
     intl-messageformat "10.5.8"
     tslib "^2.4.0"
 
+"@formatjs/ts-transformer@2.13.0", "@formatjs/ts-transformer@^2.6.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.13.0.tgz#df47b35cdd209269d282a411f1646e0498aa8fdc"
+  integrity sha512-mu7sHXZk1NWZrQ3eUqugpSYo8x5/tXkrI4uIbFqCEC0eNgQaIcoKgVeDFgDAcgG+cEme2atAUYSFF+DFWC4org==
+  dependencies:
+    intl-messageformat-parser "6.1.2"
+    tslib "^2.0.1"
+    typescript "^4.0"
+
 "@formatjs/ts-transformer@3.13.9":
   version "3.13.9"
   resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.13.9.tgz#8b6f17b3b1abf9a76b5394ef2dfef0a27746127c"
@@ -1411,14 +1420,45 @@
     tslib "^2.4.0"
     typescript "5"
 
-"@formatjs/ts-transformer@^2.6.0":
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.13.0.tgz#df47b35cdd209269d282a411f1646e0498aa8fdc"
-  integrity sha512-mu7sHXZk1NWZrQ3eUqugpSYo8x5/tXkrI4uIbFqCEC0eNgQaIcoKgVeDFgDAcgG+cEme2atAUYSFF+DFWC4org==
+"@fortawesome/fontawesome-common-types@6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.5.1.tgz#fdb1ec4952b689f5f7aa0bffe46180bb35490032"
+  integrity sha512-GkWzv+L6d2bI5f/Vk6ikJ9xtl7dfXtoRu3YGE6nq0p/FFqA1ebMOAWg3XgRyb0I6LYyYkiAo+3/KrwuBp8xG7A==
+
+"@fortawesome/fontawesome-svg-core@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.5.1.tgz#9d56d46bddad78a7ebb2043a97957039fcebcf0a"
+  integrity sha512-MfRCYlQPXoLlpem+egxjfkEuP9UQswTrlCOsknus/NcMoblTH2g0jPrapbcIb04KGA7E2GZxbAccGZfWoYgsrQ==
   dependencies:
-    intl-messageformat-parser "6.1.2"
-    tslib "^2.0.1"
-    typescript "^4.0"
+    "@fortawesome/fontawesome-common-types" "6.5.1"
+
+"@fortawesome/free-brands-svg-icons@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.5.1.tgz#e948cc02404277cb8ad40fe3573ca75f2830e876"
+  integrity sha512-093l7DAkx0aEtBq66Sf19MgoZewv1zeY9/4C7vSKPO4qMwEsW/2VYTUTpBtLwfb9T2R73tXaRDPmE4UqLCYHfg==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.5.1"
+
+"@fortawesome/free-regular-svg-icons@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.5.1.tgz#c98a91d2c9137ed54a7aa2362a916f46503e0627"
+  integrity sha512-m6ShXn+wvqEU69wSP84coxLbNl7sGVZb+Ca+XZq6k30SzuP3X4TfPqtycgUh9ASwlNh5OfQCd8pDIWxl+O+LlQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.5.1"
+
+"@fortawesome/free-solid-svg-icons@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.5.1.tgz#737b8d787debe88b400ab7528f47be333031274a"
+  integrity sha512-S1PPfU3mIJa59biTtXJz1oI0+KAXW6bkAb31XKhxdxtuXDiUIFsih4JR1v5BbxY7hVHsD1RKq+jRkVRaf773NQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.5.1"
+
+"@fortawesome/react-fontawesome@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.0.tgz#d90dd8a9211830b4e3c08e94b63a0ba7291ddcf4"
+  integrity sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==
+  dependencies:
+    prop-types "^15.8.1"
 
 "@gar/promisify@^1.0.1":
   version "1.1.3"
@@ -3179,7 +3219,7 @@
   resolved "https://registry.yarnpkg.com/@types/http-errors/-/http-errors-2.0.4.tgz#7eb47726c391b7345a6ec35ad7f4de469cf5ba4f"
   integrity sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==
 
-"@types/json-schema@*", "@types/json-schema@^7.0.12", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6", "@types/json-schema@^7.0.9":
+"@types/json-schema@*", "@types/json-schema@^7.0.12", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.15"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
@@ -3648,7 +3688,7 @@ ajv-keywords@^5.1.0:
   dependencies:
     fast-deep-equal "^3.1.3"
 
-ajv@^6.12.3, ajv@^6.12.4:
+ajv@^6.12.3, ajv@^6.12.4, ajv@^6.12.5:
   version "6.12.6"
   resolved "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz"
   integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
@@ -4046,6 +4086,16 @@ babel-plugin-polyfill-regenerator@^0.5.4:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.4.4"
 
+babel-plugin-react-intl-auto@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl-auto/-/babel-plugin-react-intl-auto-3.3.0.tgz#75c6ba8a1eb442f43c2ab85f1a75f4cc1e0d7857"
+  integrity sha512-08ZyGWtKrQY/rMNfdvrWPBsjqx+8CirqV4/JUM46FAS2aU98Mi/uWM60K6Wg6Zapdyqs3fCbQ8S4OfqMPsBiqQ==
+  dependencies:
+    "@babel/core" "^7.9.0"
+    "@babel/traverse" "^7.9.0"
+    "@babel/types" "^7.9.0"
+    murmurhash3js "^3.0.1"
+
 babel-plugin-react-intl@^7.0.0:
   version "7.9.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.9.4.tgz#1fc9ab50470d41b934df50d8f436578ee1732cb0"
@@ -4061,6 +4111,21 @@ babel-plugin-react-intl@^7.0.0:
     fs-extra "^9.0.0"
     intl-messageformat-parser "^5.3.7"
     schema-utils "^2.6.6"
+
+babel-plugin-react-intl@^8.2.25:
+  version "8.2.25"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.2.25.tgz#7b6adaa2bc291ac7b9f87bf51f1c2ea8974ffe84"
+  integrity sha512-vqzRwqxMKHBKEpzWIIabxUXSBYd8urOkk49nQdzgEt55tLIuDc1XdHceeMNaeJt9VRLYZUiL5vpYpnvrntUNMQ==
+  dependencies:
+    "@babel/core" "^7.9.0"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/types" "^7.9.5"
+    "@formatjs/ts-transformer" "2.13.0"
+    "@types/babel__core" "^7.1.7"
+    "@types/schema-utils" "^2.4.0"
+    intl-messageformat-parser "6.1.2"
+    schema-utils "^3.0.0"
+    tslib "^2.0.1"
 
 babel-walk@3.0.0-canary-5:
   version "3.0.0-canary-5"
@@ -4172,6 +4237,11 @@ boolean@3.2.0, boolean@^3.1.4:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/boolean/-/boolean-3.2.0.tgz#9e5294af4e98314494cbb17979fa54ca159f116b"
   integrity sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==
+
+bootstrap@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.2.tgz#97226583f27aae93b2b28ab23f4c114757ff16ae"
+  integrity sha512-D32nmNWiQHo94BKHLmOrdjlL05q1c8oxbtBphQFb9Z5to6eGRDCm0QgeaZ4zFBHzfg2++rqa2JkqCcxDy0sH0g==
 
 bowser@^2.11.0:
   version "2.11.0"
@@ -7364,6 +7434,11 @@ iterator.prototype@^1.1.2:
     reflect.getprototypeof "^1.0.4"
     set-function-name "^2.0.1"
 
+jquery@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
+  integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
+
 js-stringify@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/js-stringify/-/js-stringify-1.0.2.tgz#1736fddfd9724f28a3682adc6230ae7e4e9679db"
@@ -8560,6 +8635,11 @@ multimatch@5:
     arrify "^2.0.1"
     minimatch "^3.0.4"
 
+murmurhash3js@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/murmurhash3js/-/murmurhash3js-3.0.1.tgz#3e983e5b47c2a06f43a713174e7e435ca044b998"
+  integrity sha512-KL8QYUaxq7kUbcl0Yto51rMcYt7E/4N4BG3/c96Iqw1PQrTRspu8Cpx4TZ4Nunib1d4bEkIH3gjCYlP2RLBdow==
+
 mustache@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
@@ -9239,6 +9319,11 @@ plimit-lit@^1.2.6:
   integrity sha512-B7+VDyb8Tl6oMJT9oSO2CW8XC/T4UcJGrwOVoNGwOQsQYhlpfajmrMj5xeejqaASq3V/EqThyOeATEOMuSEXiA==
   dependencies:
     queue-lit "^1.5.1"
+
+popper.js@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 postcss-value-parser@^4.2.0:
   version "4.2.0"
@@ -10194,6 +10279,15 @@ schema-utils@^2.6.6:
   dependencies:
     "@types/json-schema" "^7.0.5"
     ajv "^6.12.4"
+    ajv-keywords "^3.5.2"
+
+schema-utils@^3.0.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.3.0.tgz#f50a88877c3c01652a15b622ae9e9795df7a60fe"
+  integrity sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==
+  dependencies:
+    "@types/json-schema" "^7.0.8"
+    ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
 secure-random-password@^0.2.3:
