@@ -9,7 +9,6 @@ interface ErrorProps {
 }
 
 const Error: NextPage<ErrorProps> = ({ statusCode }) => {
-
   const getErrorMessage = (statusCode?: number) => {
     switch (statusCode) {
       case 500:
@@ -17,21 +16,17 @@ const Error: NextPage<ErrorProps> = ({ statusCode }) => {
       case 503:
         return 'Service Unavailable';
       default:
-        return statusCode
-          ? 'Something Went Wrong'
-          : 'Oops';
+        return statusCode ? 'Something Went Wrong' : 'Oops';
     }
   };
   return (
     <div className="error-message">
       <div className="text-4xl">
-        {statusCode
-          ? "Error Message"
-          : getErrorMessage(statusCode)}
+        {statusCode ? 'Error Message' : getErrorMessage(statusCode)}
       </div>
       <Link href="/" className="mt-2 flex">
-          <p>Return Home</p>
-          <FontAwesomeIcon icon={faCircleArrowRight} />
+        <p>Return Home</p>
+        <FontAwesomeIcon icon={faCircleArrowRight} />
       </Link>
     </div>
   );
