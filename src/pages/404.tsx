@@ -14,7 +14,7 @@ const Custom404 = () => {
         <h2 className="lost-space">
           LOST IN{' '}
           <s className="ntv-purple">
-            <span className="w-100">SPACE</span>
+            <span className="white-100">SPACE</span>
           </s>
           ?
         </h2>
@@ -22,11 +22,13 @@ const Custom404 = () => {
           <p className="mb-4">Hmm, looks like that page doesn&apos;t exist.</p>
         </div>
         <>
-          <button onClick={() => router.back()} className="mt-2 flex btn">
-            <p className="me-2 fs-5">
-              Let&apos;s Rewind &nbsp;
-              <FontAwesomeIcon icon={faBackward} />
-            </p>
+          <button
+            onClick={() => router.back()}
+            className="mt-2 flex btn btn-purple"
+          >
+            <span className="fs-5">
+              Let&apos;s Rewind <FontAwesomeIcon icon={faBackward} />
+            </span>
           </button>
         </>
       </div>

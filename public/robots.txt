@@ -15,11 +15,6 @@ User-agent: Applebot
 User-agent: baiduspider
 User-agent: Bingbot
 Allow: /
-Disallow: /img
-Disallow: /inc
-Disallow: /assets
 
 User-agent: *
 Disallow: /
-Disallow: /assets
-Disallow: /inc

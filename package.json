@@ -9,7 +9,7 @@
     "build": "yarn build:next && yarn build:server",
     "start": "next start",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules src/styles/scss/:src/styles/css/",
-    "css-lint": "stylelint src/styles/scss/",
+    "css-lint": "stylelint src/styles/css/*.module.css src/styles/scss/ src/styles/globals.css",
     "css-prefix": "postcss --replace  src/styles/css/bootstrap.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css  src/styles/css/bootstrap.css --content src/pages/index.tsx \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output  src/styles/css/",
     "css": "npm-run-all css-compile css-prefix",

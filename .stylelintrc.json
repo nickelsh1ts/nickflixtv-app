@@ -1,3 +1,7 @@
 {
-  "extends": ["stylelint-config-twbs-bootstrap"]
+  "extends": ["stylelint-config-twbs-bootstrap"],
+  "rules": {
+    "declaration-no-important": null,
+    "selector-class-pattern": null
+  }
 }
