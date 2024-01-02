@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./public/logo_full.png" alt="nickflixtv" style="margin: 20px 0;">
+<img src="./public/img/ntv-logo_full.png" alt="nickflixtv" style="margin: 20px 0;">
 </p>
 
 **NickflixTV** is a free private members only streaming service build on top of an ecosystem of free and open source applications such as **[Sonarr](https://sonarr.tv/)**, **[Radarr](https://radarr.video/)**, **[Overserr](https://overseerr.dev/)**, and **[Plex](https://www.plex.tv/)**!
