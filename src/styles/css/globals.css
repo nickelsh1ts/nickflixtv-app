@@ -6,6 +6,8 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  --bs-gradient: 0;
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -51,7 +53,7 @@
 
     --bs-body-color: #fff !important;
     --bs-secondary-color: rgba(255, 255, 255, 0.5);
-    --bs-gradient: ;
+    --bs-gradient: 0;
 
     --primary-glow: radial-gradient(
       rgba(74, 29, 150, 0.9),
@@ -140,7 +142,6 @@ body {
 }
 
 a {
-  color: #fff !important;
   text-decoration: none !important;
 }
 
@@ -421,4 +422,8 @@ a {
   100% {
     transform: translateY(0);
   }
+}
+
+.bounce {
+  --fa-animation-duration: 2s;
 }
