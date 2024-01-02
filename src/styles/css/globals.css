@@ -6,25 +6,23 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --bs-gradient: 0;
-
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #bc1ddb33 0deg,
+    #75169233 55deg,
+    #920cbb33 120deg,
+    #8c00ff33 160deg,
     transparent 360deg
   );
   --secondary-glow: linear-gradient(
     to bottom right,
-    rgba(74, 29, 150, 0),
-    rgba(74, 29, 150, 0),
-    rgba(74, 29, 150, 0.3)
+    rgba(73, 29, 150, 0.205),
+    rgba(73, 29, 150, 0.329),
+    rgba(73, 29, 150, 0.651)
   );
 
   --tile-start-rgb: 239, 245, 249;
@@ -51,21 +49,6 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --bs-body-color: #fff !important;
-    --bs-secondary-color: rgba(255, 255, 255, 0.5);
-    --bs-gradient: 0;
-
-    --primary-glow: radial-gradient(
-      rgba(74, 29, 150, 0.9),
-      rgba(74, 29, 150, 0)
-    );
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(74, 29, 150, 0),
-      rgba(74, 29, 150, 0),
-      rgba(74, 29, 150, 0.3)
-    );
-
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
     --tile-border: conic-gradient(
@@ -86,37 +69,37 @@
     --card-border-rgb: 74, 29, 150;
   }
 
-  body::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 5px;
     height: 7px;
   }
-  body::-webkit-scrollbar-button {
+  ::-webkit-scrollbar-button {
     width: 0px;
     height: 0px;
   }
-  body::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background: #525965;
     border: 0px none #fff;
     border-radius: 0;
   }
-  body::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {
     background: #525965;
   }
-  body::-webkit-scrollbar-thumb:active {
+  ::-webkit-scrollbar-thumb:active {
     background: #525965;
   }
-  body::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: transparent;
     border: 0px none #fff;
     border-radius: 50px;
   }
-  body::-webkit-scrollbar-track:hover {
+  ::-webkit-scrollbar-track:hover {
     background: transparent;
   }
-  body::-webkit-scrollbar-track:active {
+  ::-webkit-scrollbar-track:active {
     background: transparent;
   }
-  body::-webkit-scrollbar-corner {
+  ::-webkit-scrollbar-corner {
     background: transparent;
   }
 }
@@ -151,6 +134,10 @@ a {
   }
 }
 
+.error-text {
+  font-size: 7rem;
+}
+
 .error-message {
   position: relative;
   display: flex;
@@ -166,55 +153,6 @@ a {
   color: rgb(209 213 219 / var(--tw-text-opacity));
   text-align: center;
   --tw-text-opacity: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.center {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.center::before {
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-  background: var(--secondary-glow);
-  border-radius: 50%;
-}
-
-.center::after {
-  z-index: -1;
-  width: 240px;
-  height: 180px;
-  background: var(--primary-glow);
-}
-
-.center::before,
-.center::after {
-  position: absolute;
-  left: 50%;
-  content: '';
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
-.error-text {
-  padding: 40px 0;
-  margin-bottom: 5rem;
-  font-family: Dosis, sans-serif;
-  font-size: 6rem;
-  font-weight: 500;
-}
-
-.white-100 {
-  color: #fff;
 }
 
 .ntv-purple {

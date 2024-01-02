@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import LoginButton from '@app/components/LoginButton';
+import JoinButton from '@app/components/JoinButton';
 
 const HomeNavbar = () => {
   const [navTop, setShow] = useState(false);
@@ -36,28 +36,13 @@ const HomeNavbar = () => {
           <div className="d-flex w-100">
             <a className="text-dark me-auto text-decoration-none navbar-brand align-self-center">
               <img
-                src="/img/nickflixtvlgpr.png"
+                src="/img/ntv-logo_full.png"
                 alt="logo"
                 style={{ width: '7em', height: 'auto', opacity: '0' }}
                 className="img-fluid"
               ></img>
             </a>
-            <a id="join" className="align-self-center">
-              <button
-                type="button"
-                className="btn btn-lg btn-outline-warning me-2 text-uppercase vartext d-none"
-              >
-                Sign up now
-              </button>
-            </a>
-            <a href="/watch" id="login" className="align-self-center">
-              <button
-                type="button"
-                className="btn btn-lg btn-purple me-md-2 text-uppercase vartext"
-              >
-                Log in <FontAwesomeIcon icon={faSignInAlt} />
-              </button>
-            </a>
+            <LoginButton />
           </div>
         </div>
       </nav>
@@ -75,28 +60,14 @@ const HomeNavbar = () => {
               className="text-dark me-auto text-decoration-none navbar-brand align-self-center"
             >
               <img
-                src="/img/nickflixtvlgpr.png"
+                src="/img/ntv-logo_full.png"
                 alt="logo"
                 style={{ width: '7em', height: 'auto' }}
                 className="img-fluid"
               ></img>
             </a>
-            <a href="/join" id="join" className="align-self-center">
-              <button
-                type="button"
-                className="btn btn-lg btn-outline-warning me-2 text-uppercase vartext"
-              >
-                Sign up now
-              </button>
-            </a>
-            <a href="/watch" id="login" className="align-self-center">
-              <button
-                type="button"
-                className="btn btn-lg btn-purple me-md-2 text-uppercase vartext"
-              >
-                Log in <FontAwesomeIcon icon={faSignInAlt} />
-              </button>
-            </a>
+            <JoinButton />
+            <LoginButton />
           </div>
         </div>
       </nav>
