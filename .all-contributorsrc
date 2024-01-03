@@ -1,0 +1,32 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nickelsh1ts",
+      "name": "nickelsh1ts",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76549245?v=4",
+      "profile": "https://nickelsh1ts.com",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "ideas",
+        "doc",
+        "data",
+        "infra",
+        "projectManagement",
+        "question"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "nickflixtv-app",
+  "projectOwner": "nickelsh1ts",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
