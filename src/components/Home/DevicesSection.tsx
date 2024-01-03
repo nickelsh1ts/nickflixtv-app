@@ -60,7 +60,7 @@ const DevicesSection = () => {
                     src="https://cnbl-cdn.bamgrid.com/assets/51b639d2ebe97ee175975c29d42a90b0e043713856db8e5d6d9fb87b2b3a48c0/original"
                     className="img img-fluid"
                     loading="lazy"
-                    style={{ width: '22em' }}
+                    style={{ width: '24em' }}
                   ></img>
                   <h3 className="py-4">Game Consoles</h3>
                   <p className="mb-0">Xbox One</p>

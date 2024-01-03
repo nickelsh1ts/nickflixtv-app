@@ -1,14 +1,20 @@
+import PageTitle from '@app/components/Common/PageTitle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBackward } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router';
 import Footer from '@app/components/Footer';
 import ThinNav from '@app/components/ThinNav';
 
+const messages = {
+  pagenotfound: 'Page Not Found',
+};
+
 const Custom404 = () => {
   const router = useRouter();
 
   return (
     <>
+      <PageTitle title={messages.pagenotfound} />
       <ThinNav />
       <section className="page_404">
         <div className="container">
@@ -22,7 +28,7 @@ const Custom404 = () => {
                   <h2 className="lost-space">
                     LOST IN{' '}
                     <s className="ntv-purple">
-                      <span className="white-100">SPACE</span>
+                      <span className="text-dark">SPACE</span>
                     </s>
                     ?
                   </h2>
@@ -30,7 +36,7 @@ const Custom404 = () => {
                   <>
                     <button
                       onClick={() => router.back()}
-                      className="btn link-purple fw-bolder my-3 fs-5"
+                      className="btn btn-outline-purple fw-bolder my-3 fs-5"
                     >
                       <span className="fs-5">
                         Let&apos;s Rewind <FontAwesomeIcon icon={faBackward} />

@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+
 const CookiesBanner = () => {
   return (
     <>
@@ -7,8 +10,12 @@ const CookiesBanner = () => {
         id="cookies"
         role="alert"
       >
-        <i className="fas fa-info-circle fa-lg" aria-hidden="true"></i>
-        <span className="text-purple">Nickflix</span>TV uses cookies for
+        <FontAwesomeIcon
+          className="fa-lg"
+          icon={faInfoCircle}
+          aria-hidden="true"
+        />
+        <span className="text-purple"> Nickflix</span>TV uses cookies for
         personalization, ease of access, and for other purposes.{' '}
         <a className="alert-link" target="_blank" href="/help/privacy">
           Learn more.

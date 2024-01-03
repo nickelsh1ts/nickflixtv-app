@@ -11,10 +11,10 @@ const ScrollToTopBtn = () => {
       document.documentElement.scrollTop > 300
     ) {
       // Show button
-      setShow(false);
+      setShow(true);
     } else {
       // Hide button
-      setShow(true);
+      setShow(false);
     }
   }
 
@@ -41,7 +41,7 @@ const ScrollToTopBtn = () => {
         <button
           id="scrollToTopBtn"
           type="button"
-          className={`btn btn-outline-purple m-auto ${topButton && 'd-none'}`}
+          className={`btn btn-outline-purple m-auto ${topButton ? 'd-block' : 'd-none'}`}
           onClick={scrollToTop}
         >
           Back up top <FontAwesomeIcon icon={faLevelUpAlt} />

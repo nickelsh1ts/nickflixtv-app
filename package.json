@@ -89,6 +89,7 @@
     "secure-random-password": "^0.2.3",
     "sqlite3": "^5.1.7-rc.0",
     "swagger-ui-express": "^5.0.0",
+    "swr": "^2.2.4",
     "typeorm": "^0.3.17",
     "web-push": "^3.6.6",
     "winston": "^3.11.0",
@@ -97,6 +98,7 @@
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@types/bcrypt": "^5.0.2",
+    "@types/bootstrap": "^5.2.10",
     "@types/cookie-parser": "^1.4.6",
     "@types/country-flag-icons": "^1.2.2",
     "@types/csurf": "^1.11.5",
