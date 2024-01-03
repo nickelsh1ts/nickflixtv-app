@@ -20,33 +20,34 @@ const FooterBrand = () => {
           Nickelsh1ts.com
         </a>
         <ul className="list-unstyled small text-muted">
-          <p className="align-middle justify-content-center">Built and designed by Nickelshits with{' '}
-          <a
-            rel="noreferrer"
-            className="d-inline-flex align-items-center link-secondary text-decoration-none"
-            target="_blank"
-            href="https://getbootstrap.com"
-            aria-label="Bootstrap"
-          >
-            <FontAwesomeIcon
-              icon={faBootstrap}
-              className="me-2 d-block align-content-center fs-4"
-            />
-            <span className="fs-6">Bootstrap</span>
-          </a>
-          {' '} and{' '}
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://fontawesome.com/"
-            className="d-inline-flex align-items-center link-secondary text-decoration-none"
-          >
-            <FontAwesomeIcon
-              icon={faFontAwesome}
-              className="me-2 d-block align-content-center fs-4"
-            />
-            <span className="fs-6">Font Awesome</span>
-          </a>
+          <p className="align-middle justify-content-center">
+            Built and designed by Nickelshits with{' '}
+            <a
+              rel="noreferrer"
+              className="d-inline-flex align-items-center link-secondary text-decoration-none"
+              target="_blank"
+              href="https://getbootstrap.com"
+              aria-label="Bootstrap"
+            >
+              <FontAwesomeIcon
+                icon={faBootstrap}
+                className="me-2 d-block align-content-center fs-4"
+              />
+              <span className="fs-6">Bootstrap</span>
+            </a>{' '}
+            and{' '}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://fontawesome.com/"
+              className="d-inline-flex align-items-center link-secondary text-decoration-none"
+            >
+              <FontAwesomeIcon
+                icon={faFontAwesome}
+                className="me-2 d-block align-content-center fs-4"
+              />
+              <span className="fs-6">Font Awesome</span>
+            </a>
           </p>
         </ul>
       </div>

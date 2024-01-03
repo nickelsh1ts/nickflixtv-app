@@ -33,15 +33,19 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 @import "bootstrap/scss/functions";
 
 // Customize some defaults
-$body-color: #7952b3;
+$body-color: #fff;
 $body-bg: #fff;
 $border-radius: .4em;
 $accordion-border-width: 0;
 $success: #7952b3;
 $btn-box-shadow: 0;
-$primary-text-emphasis: #fff;
+$primary-text-emphasis: #7952b3;
+$primary: #7952b3;
+$code-color: #7952b3;
 
-$btn-focus-box-shadow: inset 1px 1px 1px rgba(151, 78, 222, .3), 1px 1px 1px rgba(151, 78, 222, .3);
+$btn-focus-box-shadow:
+  inset 1px 1px 1px rgba(151, 78, 222, .3),
+  1px 1px 1px rgba(151, 78, 222, .3);
 
 // Required
 @import "bootstrap/scss/variables";

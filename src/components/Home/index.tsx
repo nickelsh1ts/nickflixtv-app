@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import HomeNavbar from '@app/components/Home/HomeNavbar';
 import PromoSection from '@app/components/Home/PromoSection';
 import RequestSection from '@app/components/Home/RequestSection';
@@ -9,6 +10,9 @@ import Footer from '@app/components/Footer';
 import CookiesBanner from '@app/components/CookiesBanner';
 
 const Setup = () => {
+  useEffect(() => {
+    document.body.classList.add('body-purple');
+  }, []);
   return (
     <>
       <HomeNavbar />

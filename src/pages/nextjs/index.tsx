@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import Image from 'next/image';
 import styles from '@app/styles/css/nextjs.module.css';
 
 export default function Home() {
+  useEffect(() => {
+    document.body.classList.add('body-dark');
+  }, []);
   return (
     <main className={styles.main}>
       <div className={styles.description}>

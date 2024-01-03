@@ -20,9 +20,9 @@
   );
   --secondary-glow: linear-gradient(
     to bottom right,
-    rgba(73, 29, 150, 0.205),
-    rgba(73, 29, 150, 0.329),
-    rgba(73, 29, 150, 0.651)
+    rgba(73, 29, 150, 0),
+    rgba(73, 29, 150, 0),
+    rgba(73, 29, 150, 0.047)
   );
 
   --tile-start-rgb: 239, 245, 249;
@@ -48,6 +48,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --bs-secondary-color: #747474;
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
@@ -60,8 +61,6 @@
       #974ede,
       #974ede
     );
-
-    --bs-code-color: rgb(127, 17, 224);
 
     --callout-rgb: 74, 29, 150;
     --callout-border-rgb: 108, 108, 108;
@@ -115,6 +114,9 @@ body {
   max-width: 100vw;
   padding: 0;
   overflow-x: hidden;
+}
+
+.body-purple {
   background: cover;
   background: linear-gradient(
     180deg,
@@ -122,6 +124,10 @@ body {
     rgba(43, 11, 83, 1) 40%,
     rgba(8, 0, 17, 1) 90%
   );
+}
+
+.body-dark {
+  background: #111111;
 }
 
 a {
@@ -364,4 +370,33 @@ a {
 
 .bounce {
   --fa-animation-duration: 2s;
+}
+
+.page_404 {
+  padding: 40px 0;
+  font-family: 'Dosis', sans-serif;
+}
+.page_404 img {
+  width: 100%;
+}
+.four_zero_four_bg {
+  background-image: url('/img/404.gif');
+  height: 400px;
+  background-position: center;
+}
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+.contant_box_404 {
+  margin-top: -50px;
 }
