@@ -8,7 +8,7 @@ const PrivacyStatement = () => {
   };
 
   return (
-    <div className="container mb-5">
+    <div className="container mb-5 text-dark">
       <h1 className="text-dark mb-4">Privacy Statement</h1>
       <p>
         This Privacy Statement explains our practices, including your choices,
