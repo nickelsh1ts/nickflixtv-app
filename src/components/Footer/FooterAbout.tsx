@@ -5,7 +5,7 @@ const FooterAbout = () => {
         <li className="mb-3">
           <a
             className="link-secondary text-decoration-none"
-            href="/help/termsofuse"
+            href="/help/legal/termsofuse"
           >
             Terms of Use
           </a>
@@ -13,9 +13,9 @@ const FooterAbout = () => {
         <li className="mb-3">
           <a
             className="link-secondary text-decoration-none"
-            href="/help/privacy"
+            href="/help/legal/privacystatement"
           >
-            Privacy Policy
+            Privacy Statement
           </a>
         </li>
       </ul>

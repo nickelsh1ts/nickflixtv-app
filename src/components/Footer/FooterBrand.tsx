@@ -1,7 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+import useSettings from '@app/hooks/useSettings';
 
 const FooterBrand = () => {
+  const settings = useSettings();
+  const messages = {
+    CompanyTitle: `${settings.currentSettings.companyTitle}`,
+  };
+
   return (
     <>
       <div className="col-lg-3">
@@ -17,11 +23,11 @@ const FooterBrand = () => {
             className="me-2"
             src="/icon/nickelsh1ts-192x192.png"
           />
-          Nickelsh1ts.com
+          {messages.CompanyTitle}.com
         </a>
-        <ul className="list-unstyled small text-muted">
+        <ul className="list-unstyled small text-secondary">
           <p className="align-middle justify-content-center">
-            Built and designed by Nickelshits with{' '}
+            Built and designed by {messages.CompanyTitle} with{' '}
             <a
               rel="noreferrer"
               className="d-inline-flex align-items-center link-secondary text-decoration-none"

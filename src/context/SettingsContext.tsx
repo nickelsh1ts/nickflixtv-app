@@ -9,7 +9,8 @@ export interface SettingsContextProps {
 
 const defaultSettings = {
   initialized: false,
-  applicationTitle: 'NickflixTV',
+  applicationTitle: 'Sh1tsflix',
+  companyTitle: 'Sh1tsflix',
   applicationUrl: '',
   hideAvailable: false,
   localLogin: true,
@@ -24,6 +25,8 @@ const defaultSettings = {
   locale: 'en',
   emailEnabled: false,
   newPlexLogin: true,
+  discord: '',
+  supportEmail: '',
 };
 
 export const SettingsContext = React.createContext<SettingsContextProps>({

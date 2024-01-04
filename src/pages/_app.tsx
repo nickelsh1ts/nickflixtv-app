@@ -45,7 +45,8 @@ const CoreApp: Omit<NextAppComponentType, 'origGetInitialProps'> = ({
 CoreApp.getInitialProps = async (initialProps) => {
   const currentSettings: PublicSettingsResponse = {
     initialized: false,
-    applicationTitle: 'NickflixTV',
+    applicationTitle: 'Streamarr',
+    companyTitle: 'Nickelsh1ts',
     applicationUrl: '',
     hideAvailable: false,
     movie4kEnabled: false,
@@ -60,6 +61,8 @@ CoreApp.getInitialProps = async (initialProps) => {
     locale: 'en',
     emailEnabled: false,
     newPlexLogin: true,
+    discord: 'https://discord.gg/ZSTrRJMcDS',
+    supportEmail: 'support@streamarr.com',
   };
 
   // Run the default getInitialProps for the main nextjs initialProps

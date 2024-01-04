@@ -5,23 +5,24 @@ import {
   faBookOpen,
   faHeadset,
 } from '@fortawesome/free-solid-svg-icons';
+import useSettings from '@app/hooks/useSettings';
 
 const MoreHelp = () => {
+  const settings = useSettings();
+
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-5 d-print-none text-dark">
         <div className="px-md-5 py-3" style={{ background: '#E8EAED' }}>
           <div className="container py-5">
-            <h1 className="text-body-emphasis text-secondary text-center">
-              Need more help?
-            </h1>
+            <h1 className="text-secondary text-center">Need more help?</h1>
             <p className="col-lg-8 mx-auto text-center lead">
               Check out the help section on Plex or reach out below! We&apos;re
               available during EST hours.
             </p>
             <div className="row row-cols-1 row-cols-lg-2 g-3 pt-3 mb-5">
               <div className="col">
-                <div className="card h-100 shadow">
+                <div className="card h-100 shadow bg-white">
                   <div className="card-body p-4 p-sm-5">
                     <div className="d-flex">
                       <FontAwesomeIcon
@@ -37,7 +38,7 @@ const MoreHelp = () => {
                           <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://discord.gg/ZSTrRJMcDS"
+                            href={settings.currentSettings.discord}
                             type="button"
                             className="btn btn-purple fw-bold me-1 mb-2"
                           >
@@ -46,7 +47,7 @@ const MoreHelp = () => {
                           <a
                             target="_blank"
                             rel="noreferrer"
-                            href="mailto:info@nickflixtv.com"
+                            href={`mailto:${settings.currentSettings.supportEmail}`}
                             type="button"
                             className="btn btn-outline-purple fw-bold mx-1 mb-2"
                           >
@@ -59,7 +60,7 @@ const MoreHelp = () => {
                 </div>
               </div>
               <div className="col">
-                <div className="card h-100 shadow">
+                <div className="card h-100 shadow bg-white">
                   <div className="card-body p-4 p-sm-5">
                     <div className="d-flex">
                       <FontAwesomeIcon

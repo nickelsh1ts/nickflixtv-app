@@ -24,6 +24,7 @@ export interface PublicSettingsResponse {
   initialized: boolean;
   applicationTitle: string;
   applicationUrl: string;
+  companyTitle: string;
   hideAvailable: boolean;
   localLogin: boolean;
   movie4kEnabled: boolean;
@@ -37,6 +38,8 @@ export interface PublicSettingsResponse {
   locale: string;
   emailEnabled: boolean;
   newPlexLogin: boolean;
+  discord: string;
+  supportEmail: string;
 }
 
 export interface CacheItem {

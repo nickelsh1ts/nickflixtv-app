@@ -48,7 +48,6 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    --bs-secondary-color: #747474;
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
@@ -274,13 +273,13 @@ a {
 .btn-outline-purple:hover {
   color: #fff !important;
   background-color: #974ede !important;
-  border-color: #2b0b53 !important;
+  border-color: #974ede !important;
 }
 .btn-check:focus + .btn-outline-purple,
 .btn-outline-purple:focus {
   color: #fff !important;
   background-color: #974ede !important;
-  border-color: #2b0b53 !important;
+  border-color: #974ede !important;
   box-shadow: 0 0 0 0.25rem rgba(137, 123, 175, 0.5) !important;
 }
 .btn-check:checked + .btn-outline-purple,

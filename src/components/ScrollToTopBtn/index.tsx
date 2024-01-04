@@ -41,7 +41,9 @@ const ScrollToTopBtn = () => {
         <button
           id="scrollToTopBtn"
           type="button"
-          className={`btn btn-outline-purple m-auto ${topButton ? 'd-block' : 'd-none'}`}
+          className={`btn btn-outline-purple m-auto ${
+            topButton ? 'd-block' : 'd-none'
+          }`}
           onClick={scrollToTop}
         >
           Back up top <FontAwesomeIcon icon={faLevelUpAlt} />

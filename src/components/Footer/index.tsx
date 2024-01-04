@@ -4,15 +4,21 @@ import FooterHelp from '@app/components/Footer/FooterHelp';
 import FooterThanks from '@app/components/Footer/FooterThanks';
 import FooterBrand from '@app/components/Footer/FooterBrand';
 import FooterSocials from '@app/components/Footer/FooterSocials';
+import useSettings from '@app/hooks/useSettings';
 
 const dateYear = new Date().getFullYear();
 
 const Footer = () => {
+  const settings = useSettings();
+  const messages = {
+    CompanyTitle: `${settings.currentSettings.companyTitle}`,
+  };
+
   return (
     <>
       <footer
         id="footer"
-        className="footer mt-auto py-3 no-print"
+        className="footer mt-auto py-3 d-print-none"
         style={{ background: 'rgba(8,0,17,1)' }}
       >
         <ScrollToTopBtn />
@@ -26,7 +32,9 @@ const Footer = () => {
               <FooterThanks />
             </div>
           </div>
-          <p style={{ fontSize: '0.8rem' }}>© {dateYear} Nickelsh1ts.com</p>
+          <p style={{ fontSize: '0.8rem' }}>
+            © {dateYear} {messages.CompanyTitle}.com
+          </p>
         </div>
       </footer>
     </>

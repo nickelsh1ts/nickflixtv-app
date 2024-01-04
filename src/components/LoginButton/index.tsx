@@ -4,12 +4,12 @@ import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 const LoginButton = () => {
   return (
     <>
-      <a href="/nextjs" id="login" className="align-self-center">
+      <a href="/login" id="login" className="align-self-center">
         <button
           type="button"
-          className="btn btn-lg btn-purple me-md-2 text-uppercase vartext"
+          className="btn btn-purple me-md-2 vartext d-print-none"
         >
-          Log in <FontAwesomeIcon icon={faSignInAlt} />
+          Sign in <FontAwesomeIcon icon={faSignInAlt} />
         </button>
       </a>
     </>

@@ -4,7 +4,7 @@ const JoinButton = () => {
       <a id="join" className="align-self-center">
         <button
           type="button"
-          className="btn btn-lg btn-outline-warning me-2 text-uppercase vartext"
+          className="btn btn-outline-warning me-2 text-uppercase vartext"
         >
           Sign up now
         </button>

@@ -1,11 +1,18 @@
+import useSettings from '@app/hooks/useSettings';
+
 const ServicesSection = () => {
+  const settings = useSettings();
+  const messages = {
+    AppTitle: `${settings.currentSettings.applicationTitle}`,
+  };
+
   return (
     <>
       <section id="favs" className="min-vh-100 pt-5">
         <div className="container-fluid p-3 p-lg-5 text-center text-light">
           <h1 className="p-2">
-            <span className="text-purple">Nickflix</span>TV has all your
-            favourites in one place
+            <span className="text-purple">{messages.AppTitle}</span> has all
+            your favourites in one place
           </h1>
           <p className="lead py-2">
             An ever evolving collection of the world&apos;s most beloved movies

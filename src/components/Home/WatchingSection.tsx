@@ -1,4 +1,11 @@
+import useSettings from '@app/hooks/useSettings';
+
 const WatchingSection = () => {
+  const settings = useSettings();
+  const messages = {
+    AppTitle: `${settings.currentSettings.applicationTitle}`,
+  };
+
   return (
     <>
       <section id="watching" className="min-vh-100">
@@ -33,8 +40,8 @@ const WatchingSection = () => {
                   <li>
                     <p>
                       Limit your experience to{' '}
-                      <span className="text-purple">Nickflix</span>TV or
-                      leverage all Plex has to offer.
+                      <span className="text-purple">{messages.AppTitle}</span>{' '}
+                      or leverage all Plex has to offer.
                     </p>
                   </li>
                   <li>

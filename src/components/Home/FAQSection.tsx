@@ -1,4 +1,11 @@
+import useSettings from '@app/hooks/useSettings';
+
 const FAQSection = () => {
+  const settings = useSettings();
+  const messages = {
+    AppTitle: `${settings.currentSettings.applicationTitle}`,
+  };
+
   return (
     <>
       <section id="faqs" className="min-vh-100">
@@ -25,7 +32,11 @@ const FAQSection = () => {
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       What is
-                      <span className="text-purple ms-1"> Nickflix</span>TV?
+                      <span className="text-purple ms-1">
+                        {' '}
+                        {messages.AppTitle}
+                      </span>
+                      ?
                     </button>
                   </h2>
                   <div
@@ -35,15 +46,16 @@ const FAQSection = () => {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div
-                      className="accordion-body"
+                      className="accordion-body text-light"
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       <p>
-                        <span className="text-purple">Nickflix</span>TV allows
-                        you to watch all your favourites in one place. With
-                        entertainment from Netflix, Disney+, Prime Video, HBO
-                        Max, and more, there&apos;s always something exciting to
-                        watch. Watch the latest releases before anyone else.
+                        <span className="text-purple">{messages.AppTitle}</span>{' '}
+                        allows you to watch all your favourites in one place.
+                        With entertainment from Netflix, Disney+, Prime Video,
+                        HBO Max, and more, there&apos;s always something
+                        exciting to watch. Watch the latest releases before
+                        anyone else.
                       </p>
                     </div>
                   </div>
@@ -76,7 +88,7 @@ const FAQSection = () => {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div
-                      className="accordion-body"
+                      className="accordion-body text-light"
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       <p>
@@ -88,11 +100,11 @@ const FAQSection = () => {
                       </p>
                       <p>
                         If you are streaming only third-party content (
-                        <span className="text-purple">Nickflix</span>TV, live
-                        TV, web shows), then you are good to go as soon as you
-                        have an account, just install an app on your phone,
-                        Smart TV, computer, or simply open up our web app on
-                        your browser!
+                        <span className="text-purple">{messages.AppTitle}</span>
+                        , live TV, web shows), then you are good to go as soon
+                        as you have an account, just install an app on your
+                        phone, Smart TV, computer, or simply open up our web app
+                        on your browser!
                       </p>
                       <p>
                         Watch thousands of free, on-demand Movies &amp; Shows
@@ -135,7 +147,10 @@ const FAQSection = () => {
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       How can I join
-                      <span className="text-purple ms-1">Nickflix</span>TV?
+                      <span className="text-purple ms-1">
+                        {messages.AppTitle}
+                      </span>
+                      ?
                     </button>
                   </h2>
                   <div
@@ -145,20 +160,21 @@ const FAQSection = () => {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div
-                      className="accordion-body"
+                      className="accordion-body text-light"
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       <p>
-                        Joining <span className="text-purple">Nickflix</span>
-                        TV is by invite only. Current active members can invite
-                        up to 5 of their friends.
+                        Joining{' '}
+                        <span className="text-purple">{messages.AppTitle}</span>{' '}
+                        is by invite only. Current active members can invite up
+                        to 5 of their friends.
                       </p>
                       <p>
                         To invite a friend simply log into your account, select
                         options from the menu and click invite a friend. Share
                         the generated code with your friend and send them to{' '}
-                        <span className="text-purple">Nickflix</span>
-                        TV.com/join or click the share button!
+                        <span className="text-purple">{messages.AppTitle}</span>
+                        .com/join or click the share button!
                       </p>
                     </div>
                   </div>
@@ -181,7 +197,10 @@ const FAQSection = () => {
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       Where can I watch{' '}
-                      <span className="text-purple ms-1">Nickflix</span>TV?
+                      <span className="text-purple ms-1">
+                        {messages.AppTitle}
+                      </span>
+                      ?
                     </button>
                   </h2>
                   <div
@@ -191,15 +210,16 @@ const FAQSection = () => {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div
-                      className="accordion-body"
+                      className="accordion-body text-light"
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       <p>
-                        <span className="text-purple">Nickflix</span>TV is
-                        available via the Plex app on compatible mobile devices,
-                        web browsers, game consoles, set-top boxes, and smart
-                        TVs or at <span className="text-purple">Nickflix</span>
-                        TV.com. For a complete list of supported and compatible
+                        <span className="text-purple">{messages.AppTitle}</span>{' '}
+                        is available via the Plex app on compatible mobile
+                        devices, web browsers, game consoles, set-top boxes, and
+                        smart TVs or at{' '}
+                        <span className="text-purple">{messages.AppTitle}</span>
+                        .com. For a complete list of supported and compatible
                         devices, click{' '}
                         <a
                           href="/help/node/devices.php"
@@ -229,7 +249,10 @@ const FAQSection = () => {
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       What can I watch on{' '}
-                      <span className="text-purple ms-1">Nickflix</span>TV?
+                      <span className="text-purple ms-1">
+                        {messages.AppTitle}
+                      </span>
+                      ?
                     </button>
                   </h2>
                   <div
@@ -239,15 +262,17 @@ const FAQSection = () => {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div
-                      className="accordion-body"
+                      className="accordion-body text-light"
                       style={{ background: 'rgba(8,0,17,1)' }}
                     >
                       <p>
-                        With <span className="text-purple">Nickflix</span>
-                        TV, you can choose from an ever-evolving collection of
+                        With{' '}
+                        <span className="text-purple">{messages.AppTitle}</span>
+                        , you can choose from an ever-evolving collection of
                         movies and TV shows. From new releases and timeless
                         classNameics to nostalgic throwbacks available on{' '}
-                        <span className="text-purple">Nickflix</span>TV Retro.
+                        <span className="text-purple">{messages.AppTitle}</span>{' '}
+                        Retro.
                       </p>
                       <p>
                         Using Overseerr, you can request almost anything
