@@ -1,7 +1,9 @@
 {
+  "ignoreFiles": ["**/*.js"],
   "extends": ["stylelint-config-twbs-bootstrap"],
   "rules": {
     "declaration-no-important": null,
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "no-descending-specificity": null
   }
 }
