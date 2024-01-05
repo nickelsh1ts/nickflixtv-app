@@ -36,7 +36,7 @@ const HomeNavbar = () => {
           <div className="d-flex w-100">
             <a className="text-dark me-auto text-decoration-none navbar-brand align-self-center">
               <img
-                src="/img/ntv-logo_full.png"
+                src="/img/sm-logo_full.png"
                 alt="logo"
                 style={{ width: '7em', height: 'auto', opacity: '0' }}
                 className="img-fluid"
@@ -60,7 +60,7 @@ const HomeNavbar = () => {
               className="text-dark me-auto text-decoration-none navbar-brand align-self-center"
             >
               <img
-                src="/img/ntv-logo_full.png"
+                src="/img/sm-logo_full.png"
                 alt="logo"
                 style={{ width: '7em', height: 'auto' }}
                 className="img-fluid"

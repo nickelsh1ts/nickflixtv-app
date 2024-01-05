@@ -7,9 +7,9 @@ export default defineConfig({
     // experimentalSessionAndOrigin: true,
   },
   env: {
-    ADMIN_EMAIL: 'admin@nickelsh1ts.dev',
+    ADMIN_EMAIL: 'admin@streamarr.dev',
     ADMIN_PASSWORD: 'test1234',
-    USER_EMAIL: 'friend@nickelsh1ts.dev',
+    USER_EMAIL: 'friend@streamarr.dev',
     USER_PASSWORD: 'test1234',
   },
   retries: {

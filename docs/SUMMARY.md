@@ -4,11 +4,11 @@
 
 ## Getting Started
 
-## Using NickflixTV
+## Using Streamarr
 
 ## Support
 
 - [Frequently Asked Questions (FAQ)](support/faq.md)
 - [Need Help?](support/need-help.md)
 
-## Extending NickflixTV
+## Extending Streamarr

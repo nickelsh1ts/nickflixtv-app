@@ -2,14 +2,14 @@ interface PWAHeaderProps {
   applicationTitle?: string;
 }
 
-const PWAHeader = ({ applicationTitle = 'NickflixTV' }: PWAHeaderProps) => {
+const PWAHeader = ({ applicationTitle = 'Streamarr' }: PWAHeaderProps) => {
   return (
     <>
       <link
         rel="shortcut icon"
         type="image/x-icon"
         sizes="192x192"
-        href="/icon/nickflixtv-logo-192x192.png"
+        href="/icon/streamarr-logo-192x192.png"
       />
       <link
         rel="icon"
@@ -25,12 +25,12 @@ const PWAHeader = ({ applicationTitle = 'NickflixTV' }: PWAHeaderProps) => {
       />
       <link
         rel="mask-icon"
-        href="/icon/nickflixtv-logo_maskable-192x192.png"
+        href="/icon/streamarr-logo_maskable-192x192.png"
         color="#2b0b53"
       />
       <link
         rel="manifest"
-        href="/ntv.webmanifest"
+        href="/site.webmanifest"
         crossOrigin="use-credentials"
       />
       <meta name="theme-color" content="#1f1f1f" />

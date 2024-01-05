@@ -26,7 +26,7 @@ const HelpBanner = () => {
                 className="d-flex link-dark text-decoration-none navbar-brand align-items-center mx-0"
               >
                 <img
-                  src="/img/ntv-logo_full.png"
+                  src="/img/sm-logo_full.png"
                   alt="logo"
                   style={{ width: '15rem', height: 'auto' }}
                   className="img-fluid"

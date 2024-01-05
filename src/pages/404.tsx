@@ -29,8 +29,7 @@ const Custom404 = () => {
                     LOST IN{' '}
                     <s className="ntv-purple">
                       <span className="text-dark">SPACE</span>
-                    </s>
-                    ?
+                    </s> STREAMING?
                   </h2>
                   <p>Hmm, looks like that page doesn&apos;t exist.</p>
                   <>

@@ -46,7 +46,7 @@ CoreApp.getInitialProps = async (initialProps) => {
   const currentSettings: PublicSettingsResponse = {
     initialized: false,
     applicationTitle: 'Streamarr',
-    companyTitle: 'Nickelsh1ts',
+    companyTitle: 'Streamarr',
     applicationUrl: '',
     localLogin: true,
     region: '',

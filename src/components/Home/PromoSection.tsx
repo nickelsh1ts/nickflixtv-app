@@ -22,7 +22,7 @@ const PromoSection = () => {
         >
           <div className="col ps-md-4 mt-auto pt-5">
             <img
-              src="/img/ntv-logo_full.png"
+              src="/img/sm-logo_full.png"
               alt="logo"
               style={{ width: '20em', height: 'auto' }}
               className="mb-4 img-fluid mt-5"

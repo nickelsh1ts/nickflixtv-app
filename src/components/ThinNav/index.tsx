@@ -11,7 +11,7 @@ const ThinNav = () => {
         <div className="container-fluid px-md-2">
           <a href="/" className="navbar-brand me-0">
             <img
-              src="/img/ntv-logo_full.png"
+              src="/img/sm-logo_full.png"
               alt="logo"
               style={{ width: '7rem', height: 'auto' }}
               className="img-fluid"

@@ -1,15 +1,18 @@
 import PageTitle from '@app/components/Common/PageTitle';
 import ThinNav from '@app/components/ThinNav';
 import Footer from '@app/components/Footer';
-
-const messages = {
-  signin: 'Sign In',
-  signinheader: 'Sign in to continue',
-  signinwithplex: 'Use your Plex account',
-  signinwithoverseerr: 'Use your {applicationTitle} account',
-};
+import useSettings from '@app/hooks/useSettings';
 
 const Login = () => {
+  const settings = useSettings();
+  const messages = {
+    AppTitle: `${settings.currentSettings.applicationTitle}`,
+    signin: 'Sign In',
+    signinheader: 'Sign in to continue',
+    signinwithplex: 'Use your Plex account',
+    signinwithoverseerr: 'Use your {applicationTitle} account',
+  };
+
   return (
     <>
       <PageTitle title={messages.signin} />
@@ -30,7 +33,7 @@ const Login = () => {
             </h4>
             <p className="small">
               You will use this account to log into{' '}
-              <span className="text-purple">Nickflix</span>TV to watch your
+              <span className="text-purple">{messages.AppTitle}</span> to watch your
               favourite movies and TV Shows.
             </p>
           </div>
@@ -103,7 +106,7 @@ const Login = () => {
               </a>
             </p>
             <p className="mt-4 text-start text-light small">
-              New to <span className="text-purple">Nickflix</span>TV?{' '}
+              New to <span className="text-purple">{messages.AppTitle}</span>?{' '}
               <a
                 href="/join"
                 className="link-light text-decoration-none fw-bold"
