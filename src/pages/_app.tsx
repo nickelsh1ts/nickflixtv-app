@@ -7,7 +7,7 @@ import App from 'next/app';
 import Head from 'next/head';
 import '@app/styles/scss/bootstrap.scss';
 import '@app/styles/css/globals.css';
-import BootstrapClient from '@app/components/BootstrapClient.js';
+import BootstrapClient from '@app/components/BootstrapClient';
 
 interface ExtendedAppProps extends AppProps {
   currentSettings: PublicSettingsResponse;

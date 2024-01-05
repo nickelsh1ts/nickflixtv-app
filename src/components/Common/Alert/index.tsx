@@ -1,0 +1,60 @@
+import { faCircleInfo, faCircleXmark, faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+interface AlertProps {
+  title?: React.ReactNode;
+  type?: 'warning' | 'info' | 'error';
+  children?: React.ReactNode;
+}
+
+const Alert = ({ title, children, type }: AlertProps) => {
+  let design = {
+    bgColor:
+      'border border-yellow-500 backdrop-blur bg-yellow-400 bg-opacity-20',
+    titleColor: 'text-yellow-100',
+    textColor: 'text-yellow-300',
+    svg: <FontAwesomeIcon icon={faExclamationTriangle} className="h-5 w-5" />,
+  };
+
+  switch (type) {
+    case 'info':
+      design = {
+        bgColor:
+          'border border-indigo-500 backdrop-blur bg-indigo-400 bg-opacity-20',
+        titleColor: 'text-gray-100',
+        textColor: 'text-gray-300',
+        svg: <FontAwesomeIcon icon={faCircleInfo} className="h-5 w-5" />,
+      };
+      break;
+    case 'error':
+      design = {
+        bgColor: 'bg-red-600',
+        titleColor: 'text-red-100',
+        textColor: 'text-red-300',
+        svg: <FontAwesomeIcon icon={faCircleXmark} className="h-5 w-5" />,
+      };
+      break;
+  }
+
+  return (
+    <div className={`mb-4 rounded-md p-4 ${design.bgColor}`}>
+      <div className="flex">
+        <div className={`flex-shrink-0 ${design.titleColor}`}>{design.svg}</div>
+        <div className="ml-3">
+          {title && (
+            <div className={`text-sm font-medium ${design.titleColor}`}>
+              {title}
+            </div>
+          )}
+          {children && (
+            <div className={`mt-2 text-sm first:mt-0 ${design.textColor}`}>
+              {children}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Alert;
