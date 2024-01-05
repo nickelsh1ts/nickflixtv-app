@@ -1,0 +1,83 @@
+{
+  "clientId": "",
+  "main": {
+    "apiKey": "testkey",
+    "applicationTitle": "Streamarr",
+    "applicationUrl": "",
+    "csrfProtection": false,
+    "cacheImages": false,
+    "defaultPermissions": 32,
+    "localLogin": true,
+    "newPlexLogin": true,
+    "region": "",
+    "originalLanguage": "",
+    "trustProxy": false,
+    "locale": "en"
+  },
+  "plex": {
+    "name": "Streamy",
+    "ip": "192.168.1.1",
+    "port": 32400,
+    "useSsl": false,
+    "libraries": [
+      {
+        "id": "1",
+        "name": "Movies",
+        "enabled": true,
+        "type": "movie"
+      }
+    ],
+    "machineId": "test"
+  },
+  "tautulli": {},
+  "radarr": [],
+  "sonarr": [],
+  "public": {
+    "initialized": true
+  },
+  "notifications": {
+    "agents": {
+      "email": {
+        "enabled": false,
+        "options": {
+          "emailFrom": "",
+          "smtpHost": "",
+          "smtpPort": 587,
+          "secure": false,
+          "ignoreTls": false,
+          "requireTls": false,
+          "allowSelfSigned": false,
+          "senderName": "Streamarr"
+        }
+      },
+      "discord": {
+        "enabled": false,
+        "types": 0,
+        "options": {
+          "webhookUrl": "",
+          "enableMentions": true
+        }
+      },
+      "webhook": {
+        "enabled": false,
+        "types": 0,
+        "options": {
+          "webhookUrl": "",
+          "jsonPayload": ""
+        }
+      },
+      "webpush": {
+        "enabled": false,
+        "options": {}
+      },
+      "gotify": {
+        "enabled": false,
+        "types": 0,
+        "options": {
+          "url": "",
+          "token": ""
+        }
+      }
+    }
+  }
+}
