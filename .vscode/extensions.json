@@ -14,8 +14,6 @@
     // https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
     "Orta.vscode-jest",
 
-    "stylelint.vscode-stylelint",
-
-    "bradlc.vscode-tailwindcss"
+    "stylelint.vscode-stylelint"
   ]
 }
